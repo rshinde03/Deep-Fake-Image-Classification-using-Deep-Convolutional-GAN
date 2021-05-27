@@ -1,25 +1,15 @@
-
  # Deep Fake Image Generation Using Deep Convolutional Generative Adversarial Network #
-
-
 
 As the crime rates have increased due to fake images and videos, it has become the need of the hour today to build technologies that could identify these threats and protect us from any potential scams. This project aims to implement a DCGAN (Deep Convolutional Generative Adversarial Network) to generate "fake" images based on an existing dataset. The generated images can then be used to build a classifier which can identify an image as real vs fake. GANs like a DCGAN have been used widely to create Deep Fakes. We aim to use DCGAN to build high-quality deep fakes.
 
-
 Deep Fakes are the altered videos that appear to imitate a real person through techniques such as swapping facial features in order to make the person in the video appear as though it is an original video. They are videos or bots which give us the feel of a real person talking when in reality they are "fake". Deep Fake videos of politicians and celebrities are being created increasingly to mislead the people. A very famous example of a Deep Fake video is of the late actor Paul Walker where they used GAN to create an artificial version of him in the last scene of the movie Fast and Furious7.
-
 
  ## Dataset ##
 
 ![image](https://user-images.githubusercontent.com/55992728/119749809-e2254600-be65-11eb-8363-c153d30db29e.png)
-
+ *Figure 1: Original CIFAR-10 dataset for the DOG class* 
+ 
 The **CIFAR-10** dataset is described as a widely used dataset for machine learning computer vision tasks such as image classification, object recognition, etc. The dataset contains 60,000 colored images of 32 by 32 size across 10 classes that are either animals or transportation means. There are 6000 images for each of the 10 classes. The dataset is divided into a training set and a test set with 50,000 and 10,000 images, respectively. The training set is further divided into five batches and one test batch, where there are 10,000 images each. Of note, the test batch' selection was randomized to include 1,000 images per class, while the training batch consists of the latter randomized ordered images with 5,000 images per class. We have subset the **CIFAR-10** dataset and use only **DOG** class to implement a DCGAN to generate high-quality fake images
-
-
-<P style='padding-left : 450px' > ![][2] </p>
-
-<P style="font-family: Muli, sans-serif; padding-left : 450px" > *Figure 1: Original CIFAR-10 dataset for the DOG class* </P>
-
 
 <h3 style=" text-align : center ; color : #7575ff" > **What Are GAN'S?** </h3>
 
