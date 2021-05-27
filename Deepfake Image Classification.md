@@ -1,22 +1,19 @@
 
- ## Deep Fake Image Generation Using Deep Convolutional Generative Adversarial Network ##
+ # Deep Fake Image Generation Using Deep Convolutional Generative Adversarial Network #
 
 
-<p style= "font-family: Microsoft Sans Serif"; >
+
 As the crime rates have increased due to fake images and videos, it has become the need of the hour today to build technologies that could identify these threats and protect us from any potential scams. This project aims to implement a DCGAN (Deep Convolutional Generative Adversarial Network) to generate "fake" images based on an existing dataset. The generated images can then be used to build a classifier which can identify an image as real vs fake. GANs like a DCGAN have been used widely to create Deep Fakes. We aim to use DCGAN to build high-quality deep fakes.
-</p>
 
-<p style= "font-family:'Muli', sans-serif;" >
+
 Deep Fakes are the altered videos that appear to imitate a real person through techniques such as swapping facial features in order to make the person in the video appear as though it is an original video. They are videos or bots which give us the feel of a real person talking when in reality they are "fake". Deep Fake videos of politicians and celebrities are being created increasingly to mislead the people. A very famous example of a Deep Fake video is of the late actor Paul Walker where they used GAN to create an artificial version of him in the last scene of the movie Fast and Furious7.
-</p>
 
 
+ ## Dataset ##
 
-<h3 style=" text-align : center ; color : #7575ff" > **Dataset** </h3>
+![image](https://user-images.githubusercontent.com/55992728/119749809-e2254600-be65-11eb-8363-c153d30db29e.png)
 
-<p style= "font-family:'Muli', sans-serif;">
-The **CIFAR-10** dataset is described as a widely used dataset for machine learning computer vision tasks such as image classification, object recognition, etc. The dataset contains 60,000 colored images of 32 by 32 size across 10 classes that are either animals or transportation means. There are 6000 images for each of the 10 classes. The dataset is divided into a training set and a test set with 50,000 and 10,000 images, respectively. The training set is further divided into five batches and one test batch, where there are 10,000 images each. Of note, the test batch' selection was randomized to include 1,000 images per class, while the training batch consists of the latter randomized ordered images with 5,000 images per class. We have subset the **CIFAR-10** dataset and use only **DOG** class to implement a DCGAN to generate high-quality fake images.
-</p>
+The **CIFAR-10** dataset is described as a widely used dataset for machine learning computer vision tasks such as image classification, object recognition, etc. The dataset contains 60,000 colored images of 32 by 32 size across 10 classes that are either animals or transportation means. There are 6000 images for each of the 10 classes. The dataset is divided into a training set and a test set with 50,000 and 10,000 images, respectively. The training set is further divided into five batches and one test batch, where there are 10,000 images each. Of note, the test batch' selection was randomized to include 1,000 images per class, while the training batch consists of the latter randomized ordered images with 5,000 images per class. We have subset the **CIFAR-10** dataset and use only **DOG** class to implement a DCGAN to generate high-quality fake images
 
 
 <P style='padding-left : 450px' > ![][2] </p>
@@ -106,8 +103,8 @@ This graph shows the loss for both the generator and discriminator of the baseli
 </p>
 
 
-<hr size="2" width="50%" color="black">  
-<h2 style='padding-left : 500px'> **3.**  **DCGAN with learning rate = 0.0003** </h2>
+
+ **3.**  **DCGAN with learning rate = 0.0003** </h2>
 
 <P style='padding-left : 450px' > ![Table Description automatically generated] (a) ![A picture containing tiled Description automatically generated][12] (b) </p>
 
@@ -117,52 +114,8 @@ This graph shows the loss for both the generator and discriminator of the baseli
 </p>
 
 
-<h3 style=" text-align : center ; color : #7575ff" > **Conclusion** </h3>
-<p style= "font-family:'Muli', sans-serif;">
+
 GAN's are state of the art technology studied widely today. Deep fakes created using a GAN are studied and implemented for various purposes. One of the main purpose is to understand the underlying pattern and distribution of data by training the model adversarially. This project was focused on building and implementing a DCGAN which is a modified version of GAN that uses deep convolutional neural networks with dropout layers to create fake images from the original dataset. The model that performed better than other models for generating fake DOG images used a learning rate of 0.0003, with transposed layers in the generator, a Leaky ReLU activation function, and an Adam's optimizer.
-</p>
-<h3 style=" text-align : center ; color : #7575ff" > **Future Work** </h3>
-<p style= "font-family:'Muli', sans-serif;">
+
 This project scope can be widened and applied for multi-class classification by using a Conditional GAN. In Conditional GAN labels are also provided as the input to the Generator and the Discriminator during training. All the 10 classes in the CIFAR-10 data set can be used as the training data and the model would generate random fake images that mimic any of these categories, the discriminator will then classify the real and fake images for each of these 10 classes and calculate loss as a measure of accuracy. Such GAN's can also be used for generating and identifying deep fake videos which is a hot research topic today. More versions of this GAN can be used in the future by hyperparameter tuning of the existing ones or making changes such as adding noise to the labels before feeding them to the discriminator, sampling from a Gaussian distribution rather than from a Uniform Distribution, generate mini-batches for real images and fake images separately, using a pre-trained discriminator or a generator, apply transfer learning on the dataset and adding some gaussian noise to the images before feeding it to the Discriminator.
-</p>
-<h3 style=" text-align : center ; color : #7575ff" > **References** </h3>
 
-
-1. Sharma, S. (2019, February 14). Activation Functions in Neural Networks. Retrieved October 15, 2020, from <https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6>
-
-2. Anwar, A. (2020, November 06). What is Transposed Convolutional Layer? Retrieved November 01, 2020, from <https://towardsdatascience.com/what-is-transposed-convolutional-layer-40e5e6e31c11>
-
-3. IBM Developer Advocate in Silicon Valley. (2019, December 26). Deepfakes and the world of Generative Adversarial Networks. Retrieved October 12, 2020, from <https://medium.com/@lennartfr/deepfakes-and-the-world-of-generative-adversarial-networks-bf6937e70637>
-
-4. Hui, J. (2020, September 30). Detect AI-generated Images & Deepfakes (Part 1). Retrieved October 12, 2020, from <https://medium.com/@jonathan_hui/detect-ai-generated-images-deepfakes-part-1-b518ed5075f4>
-
-5. "The CIFAR-10 dataset" <https://www.cs.toronto.edu/~kriz/cifar.html>
-
-6. K. Wang, C. Gou, Y. Duan, Y. Lin, X. Zheng and F. Wang, \"Generative adversarial networks: introduction and outlook,\" in IEEE/CAA Journal of Automatica Sinica, vol. 4, no. 4, pp. 588-598, 2017, doi: 10.1109/JAS.2017.7510583.
-
-7. C. Shorten, “Deeper into DCGANs,” Medium, 09-May-2019. [Online]. Available: https://towardsdatascience.com/deeper-into-dcgans-2556dbd0baac.
-
-8. Stanford Dogs dataset for Fine-Grained Visual Categorization. [Online]. Available: http://vision.stanford.edu/aditya86/ImageNetDogs/.
-
-9. “Generative Dog Images,” Kaggle. [Online]. Available: https://www.kaggle.com/c/generative-dog-images.
-
-
-  [1]: media/image1.png {width="6.416666666666667in" height="1.6875in"}
-  [2]: media/image2.png {width="4.0615923009623796in" height="2.44375in"}
-  [GANs beyond generation: 7 alternative use cases \| by Alexandr Honchar \| Medium]: media/image3.png {width="4.083801399825022in" height="1.9340277777777777in"}
-  [3]: media/image4.png {width="6.5in" height="2.0076388888888888in"}
-  [4]: media/image5.png {width="7.065972222222222in" height="2.5027777777777778in"}
-  [5]: media/image6.png {width="2.5833333333333335in" height="1.7222222222222223in"}
-  [6]: media/image7.png {width="2.6805555555555554in" height="1.6309590988626421in"}
-  [7]: media/image8.png {width="2.6284722222222223in" height="1.6206124234470691in"}
-  [8]: media/image9.png {width="1.8298611111111112in" height="1.31003280839895in"}
-  [9]: media/image10.png {width="1.7868055555555555in" height="1.2952438757655294in"}
-  [10]: media/image11.png {width="1.875in" height="1.320313867016623in"}
-  [Background pattern Description automatically generated]: media/image12.png {width="2.3854166666666665in" height="2.3854166666666665in"}
-  [A picture containing text, tiled Description automatically generated]: media/image13.png {width="2.4131944444444446in" height="2.4131944444444446in"}
-  [11]: media/image14.png {width="2.4618055555555554in" height="2.4618055555555554in"}
-  [A picture containing tiled Description automatically generated]: media/image15.png {width="2.4791666666666665in" height="2.4791666666666665in"}
-  [Table Description automatically generated]: media/image16.png {width="2.392361111111111in" height="2.392361111111111in"}
-  [12]: media/image17.png {width="2.4444444444444446in" height="2.4444444444444446in"}
-  [13]: media/image18.png {width="2.4618055555555554in" height="2.4618055555555554in"}
-  [Application Description automatically generated]: media/image19.png {width="2.4652777777777777in" height="2.4652777777777777in"}
