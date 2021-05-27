@@ -53,6 +53,16 @@ The tuned DCGAN model with a learning rate of 0.0003 performed better than both 
 
 This graph shows the loss for both the generator and discriminator of the baseline DCGAN model.
 
+![image](https://user-images.githubusercontent.com/55992728/119750491-717f2900-be67-11eb-8bae-b94321c2b6d5.png)
+
+## 2. DCGAN with Learning rate= 0.0002
+
+![image](https://user-images.githubusercontent.com/55992728/119750551-95db0580-be67-11eb-99bd-813b4fb50729.png)
+
+## 3. DCGAN with Learning rate = 0.0003
+
+![image](https://user-images.githubusercontent.com/55992728/119750609-b4d99780-be67-11eb-988f-b7ad31f2ca24.png)
+
 ## Conclusion
 
 GAN's are state of the art technology studied widely today. Deep fakes created using a GAN are studied and implemented for various purposes. One of the main purpose is to understand the underlying pattern and distribution of data by training the model adversarially. This project was focused on building and implementing a DCGAN which is a modified version of GAN that uses deep convolutional neural networks with dropout layers to create fake images from the original dataset. The model that performed better than other models for generating fake DOG images used a learning rate of 0.0003, with transposed layers in the generator, a Leaky ReLU activation function, and an Adam's optimizer.
