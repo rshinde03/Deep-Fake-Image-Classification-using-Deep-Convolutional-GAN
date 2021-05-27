@@ -1,5 +1,5 @@
 
- **Deep Fake Image Generation Using Deep Convolutional Generative Adversarial Network**  
+ ## Deep Fake Image Generation Using Deep Convolutional Generative Adversarial Network ##
 
 
 <p style= "font-family: Microsoft Sans Serif"; >
