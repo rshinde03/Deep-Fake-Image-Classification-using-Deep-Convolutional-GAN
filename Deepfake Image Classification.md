@@ -1,10 +1,6 @@
-<P style='padding-left : 350px' > ![][1] </p>
 
-<h1 style='text-align : center ; color:#006940;background-color: #fc3;' > **Deep Fake Image Generation Using Deep Convolutional Generative Adversarial Network**  </h1>
-<h3 style='text-align : center ; color:#fc3; background-color: #006940;' > **GEORGE MASON UNIVERSITY**  </h3>
---------------------
-<h4 style='text-align : center ; color: white; font-family: Arial; background-color: #006940;' > **Team Members: [Maazuddin Mohammed, Nina Nnamani, Rutuja Shinde]{.ul}** </h4>
-------------
+ **Deep Fake Image Generation Using Deep Convolutional Generative Adversarial Network**  
+
 
 <p style= "font-family: Microsoft Sans Serif"; >
 As the crime rates have increased due to fake images and videos, it has become the need of the hour today to build technologies that could identify these threats and protect us from any potential scams. This project aims to implement a DCGAN (Deep Convolutional Generative Adversarial Network) to generate "fake" images based on an existing dataset. The generated images can then be used to build a classifier which can identify an image as real vs fake. GANs like a DCGAN have been used widely to create Deep Fakes. We aim to use DCGAN to build high-quality deep fakes.
